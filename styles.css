@@ -1,0 +1,884 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #04b469;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #04b469;
+    padding: 50px;
+}
+
+.food-gallery {
+    text-align: center;
+    padding: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.food-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container {
+    display: flex; /* Use flexbox for layout */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    border: 1px solid #ccc; /* Optional border */
+  }
+  
+  .search-input {
+    flex-grow: 1; /* Allow input to expand */
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none; /* Remove default outline on focus */
+  }
+  
+  .search-button {
+    background-color: #f0c14e; /* Example yellow color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .search-button:hover {
+    background-color: #e6a82c; /* Darker yellow on hover */
+  }
+  
+  /* Optional: Add a magnifying glass icon to the button */
+  .search-button {
+    position: relative; /* For positioning the icon */
+    padding-left: 35px; /* Add space for the icon */
+  }
+  
+  .search-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("search-icon.png"); /* Replace with your icon path */
+    background-size: contain;
+  }
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+}
+/* Basic reset and general styles */
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Example text color */
+}
+
+.container {
+    max-width: 1440px; /* As per your design */
+    margin: 0 auto;
+    padding: 0 20px; /* Add some side padding */
+}
+
+.home-kitchen {
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+.home-kitchen h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.food-items {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    grid-gap: 20px; /* Spacing between grid items */
+}
+
+.food-item {
+    border: 1px solid #ccc; /* Optional border for items */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for items */
+    text-align: center; /* Center content within each item */
+}
+
+.food-item img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.food-item h3 {
+    margin-bottom: 5px;
+}
+
+.food-item p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around; /* Distribute details evenly */
+    align-items: center;
+}
+
+.rating {
+    color: gold; /* Style the rating (e.g., gold stars) */
+}
+
+.add-to-cart {
+    background-color: #00AA5E; /* Add to cart button color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #008040; /* Darker green on hover */
+}
+.hero-text {
+    color: white; /* Set text color to white */
+    /* ... other styles for font, alignment, etc. ... */
+  }
+.carousel-item {
+    min-width: 200px;
+}
+
+.video {
+    position: relative;
+    text-align: center;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+}
+nav ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover (Optional) */
+}
+.popular-items {
+    padding: 40px 0;
+    text-align: center; /* Center the content */
+}
+
+.popular-items h2 {
+    margin-bottom: 30px;
+}
+
+.carousel {
+    position: relative; /* For positioning buttons */
+    width: 90%; /* Adjust as needed */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflowing items */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item {
+    min-width: 33.33%; /* Each item takes 1/3 of the width */
+    padding: 0 10px; /* Add some spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons are on top */
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.request-dish-button {
+    background-color: #00AA5E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.request-dish-button:hover {
+    background-color: #008040;
+}
+
+.about-us {
+    background-color: #f8f8f8; /* Example light gray background */
+    padding: 80px 0; /* Adjust padding as needed */
+    text-align: center; /* Center the content */
+}
+
+.about-content {
+    max-width: 900px; /* Adjust max width as needed */
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.about-content p {
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6;
+    color: #666; /* Example gray color for the paragraph */
+    margin-bottom: 40px;
+}
+
+.video-container {
+    position: relative; /* For positioning play button */
+    max-width: 640px; /* Adjust video width as needed */
+    margin: 0 auto;
+    cursor: pointer; /* Make container clickable */
+}
+
+.video-placeholder {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent space below image */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px; /* Adjust play button size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us {
+    display: flex; /* Use flexbox for layout */
+    padding: 80px 0;
+    align-items: center; /* Vertically center content */
+    background-color: #f8f8f8;
+}
+
+.contact-content {
+    flex: 1; /* Takes up available space */
+    padding: 0 40px; /* Add padding around form */
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px; /* Space between input fields */
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-content button {
+    background-color: #00AA5E;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-content button:hover {
+    background-color: #008040;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: center; /* Center the image */
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #00AA5E;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribute content evenly */
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-left img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-middle {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-middle a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+.carousel-item {
+    display: inline-block; /* Or inline */
+    min-width: 33.33%;
+    /* ... other styles ... */
+}
+/* Basic reset and general styles */
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Example text color */
+}.container {
+    max-width: 1440px; /* As per your design */
+    margin: 0 auto;
+    padding: 0 20px; /* Add some side padding */
+}.contact-us {
+  display: flex;
+  padding: 80px 0;
+  align-items: center; /* Vertically center content */
+  background-color: #f8f8f8;
+}.contact-content {
+  flex: 1; /* Takes up available space */
+  padding: 0 40px; /* Add padding around form */
+  max-width: 50%; /* Limit width of content */
+}.contact-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}.contact-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}.form-group {
+  display: flex;
+  gap: 20px; /* Space between input fields */
+  margin-bottom: 20px;
+}.form-group input,.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px; /* Adjust height as needed */
+  resize: vertical; /* Allow vertical resizing */
+}.contact-content button {
+  background-color: #00AA5E;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}.contact-content button:hover {
+  background-color: #008040;
+}.contact-image {
+  flex: 1;
+  text-align: center; /* Center the image */
+  max-width: 50%; /* Limit width of image */
+}.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #00AA5E;
+  color: white;
+  padding: 20px 0;
+}.footer-content {
+  display: flex;
+  justify-content: space-around; /* Distribute content evenly */
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-us {
+    background-color: #f8f8f8; /* Example light gray background */
+    padding: 80px 0; /* Adjust padding as needed */
+    text-align: center; /* Center the content */
+}
+
+.about-content {
+    max-width: 900px; /* Adjust max width as needed */
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.about-content p {
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6;
+    color: #666; /* Example gray color for the paragraph */
+    margin-bottom: 40px;
+}
+
+.video-container {
+    position: relative; /* For positioning play button */
+    max-width: 640px; /* Adjust video width as needed */
+    margin: 0 auto;
+    cursor: pointer; /* Make container clickable */
+}
+
+.video-placeholder {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent space below image */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px; /* Adjust play button size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* New styles for the light green background */
+.about-us::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-color: #e0f2f7; /* Light green color */
+    z-index: -1; /* Place behind the content */
+}
+
+.about-us {
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    overflow: hidden; /* Hide any overflow from the pseudo-element */
+}
+/* ... (Existing CSS styles) ... */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+    /* Header */
+    .header-container {
+        flex-direction: column; /* Stack header elements */
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+
+    nav li {
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column; /* Stack hero content and image */
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 50px 20px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    /* Home Kitchen */
+    .food-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
+        grid-gap: 10px;
+    }
+
+    /* Popular Items */
+    .carousel-item {
+        min-width: 100%; /* Make carousel items full width */
+    }
+
+    .carousel {
+        width: 95%;
+    }
+
+    /* About Us */
+    .about-content h2 {
+        font-size: 24px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+
+    /* Contact Us */
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-content,
+    .contact-image {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+/* ... other styles ... */
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    /* ... other responsive styles ... */
+
+    /* Header Navigation - Corrected */
+    .header-container {
+        flex-direction: column; /* Stack header elements */
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navigation links horizontal */
+        justify-content: center; /* Center the links */
+    }
+
+    nav li {
+        margin: 0 10px; /* Adjust spacing between links */
+    }
+
+    /* ... other responsive styles ... */
+}
+/* ... (Your existing CSS styles) ... */
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less */
+    max-width: 600px; /* Set a maximum width */
+    position: relative; /* Needed for close button positioning */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+#cart-items {
+    min-height: 100px; /* Ensure some height even when empty */
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#empty-cart-message {
+    text-align: center;
+    color: #888;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Space between buttons */
+}
+
+.continue-shopping,
+.checkout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-shopping {
+    background-color: #ddd;
+    color: #333;
+}
+
+.checkout {
+    background-color: #00AA5E;
+    color: white;
+}
+#cart-items {
+    min-height: 150px; /* Increased height for better spacing */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    
+}
+
+/* Empty Cart Container */
+#empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Space between elements */
+}
+
+.empty-cart-icon {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0.7; /* Slightly faded icon */
+}
+
+#empty-cart-message {
+    color: #333;
+    font-size: 1.2em; /* Slightly larger font */
+    font-weight: 500;
+}
+
+.empty-cart-description {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: center; /* Center the button */
+}
+
+.back-to-menu {
+    background-color: #00AA5E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#request-form .form-group {
+    margin-bottom: 20px; /* Increased spacing */
+}
+
+#request-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500; /* Slightly bolder label */
+}
+
+#request-form input,
+#request-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 0; /* Remove default margin */
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align to right */
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px; /* Add top margin */
+}
+
+.cancel-button, .submit-request {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-button {
+    background-color: #ddd;
+    color: #333;
+}
+
+.submit-request {
+    background-color: #00AA5E;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #ccc;
+}
+
+.submit-request:hover {
+    background-color: #008040;
+}
+
+
+
+
+
+.mirrored-arrow {
+    transform: scaleX(-1);
+  }
