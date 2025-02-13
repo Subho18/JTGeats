@@ -49,7 +49,8 @@ nav ul li {
 .carousel {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
 }
 .search-container {
     display: flex; /* Use flexbox for layout */
@@ -97,10 +98,11 @@ nav ul li {
     background-image: url("search-icon.png"); /* Replace with your icon path */
     background-size: contain;
   }
-.carousel-inner {
+  .carousel-inner {
     display: flex;
     overflow: hidden;
-    width: 200px;
+    width: 80%;
+    margin: 0 auto;
 }
 /* Basic reset and general styles */
 body {
@@ -794,10 +796,18 @@ footer {
 }
 
 #empty-cart-message {
-    color: #333;
-    font-size: 1.2em; /* Slightly larger font */
-    font-weight: 500;
+    color: #555; /* Softer dark gray for better readability */
+    font-size: 1.4em; /* Slightly larger for emphasis */
+    font-weight: 600; /* Bolder for clarity */
+    text-align: center; /* Center align for better UX */
+    padding: 20px; /* Adds spacing around the message */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    margin: 20px auto; /* Centers the message block */
+    width: fit-content; /* Adjusts width based on content */
 }
+
 
 .empty-cart-description {
     color: #777;
