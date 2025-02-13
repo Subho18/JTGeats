@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const emptyCartMessage = document.getElementById('empty-cart-message');
 
     // Sample cart data (replace with your actual data fetching logic)
-    let cartData = []; // Or fetch from local storage, API, etc.
+    let cartData = []; 
 
     function updateCartModal() {
         if (cartData.length === 0) {
